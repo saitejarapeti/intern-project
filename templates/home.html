@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Home Page</h1>
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }}">
+{{ message }}
+</div>
+{% endfor %}
+{% endif %}
+
+
+
+
+</body>
+</html>
